@@ -1,0 +1,1324 @@
+[
+  {
+    "id": 1,
+    "date": "2021-03-20T17:05:35",
+    "date_gmt": "2021-03-20T16:05:35",
+    "guid": {
+      "rendered": "http://wp.oncographene.com/?p=1"
+    },
+    "modified": "2021-03-20T17:05:35",
+    "modified_gmt": "2021-03-20T16:05:35",
+    "slug": "witaj-swiecie",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp.oncographene.com/2021/03/20/witaj-swiecie/",
+    "title": {
+      "rendered": "Witaj, świecie!"
+    },
+    "content": {
+      "rendered": "\n<p>Witamy w WordPressie. To jest twój pierwszy post. Edytuj go lub usuń, a następnie zacznij pisać!</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Witamy w WordPressie. To jest twój pierwszy post. Edytuj go lub usuń, a następnie zacznij pisać!</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/1/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media?parent=1"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/categories?post=1"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/tags?post=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "konrad",
+          "url": "http://wp.oncographene.com",
+          "description": "",
+          "link": "http://wp.oncographene.com/author/konrad/",
+          "slug": "konrad",
+          "avatar_urls": {
+            "24": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=24&d=mm&r=g",
+            "48": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=48&d=mm&r=g",
+            "96": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "replies": [
+        [
+          {
+            "id": 1,
+            "parent": 0,
+            "author": 0,
+            "author_name": "Komentator WordPress",
+            "author_url": "https://wordpress.org/",
+            "date": "2021-03-20T17:05:35",
+            "content": {
+              "rendered": "<p>Cześć, to jest komentarz.<br />\nAby zapoznać się z moderowaniem, edycją i usuwaniem komentarzy, należy odwiedzić ekran Komentarze w kokpicie.<br />\nAwatary komentujących pochodzą z <a href=\"https://pl.gravatar.com\">Gravatara</a>.</p>\n"
+            },
+            "link": "http://wp.oncographene.com/2021/03/20/witaj-swiecie/#comment-1",
+            "type": "comment",
+            "author_avatar_urls": {
+              "24": "http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=24&d=mm&r=g",
+              "48": "http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=48&d=mm&r=g",
+              "96": "http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=96&d=mm&r=g"
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/comments/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/comments"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "post_type": "post",
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/1"
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "http://wp.oncographene.com/category/bez-kategorii/",
+            "name": "Brak kategorii",
+            "slug": "bez-kategorii",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "date": "2018-06-20T17:35:00",
+    "date_gmt": "2018-06-20T15:35:00",
+    "guid": {
+      "rendered": "http://wp.oncographene.com/?p=13"
+    },
+    "modified": "2021-03-20T17:44:07",
+    "modified_gmt": "2021-03-20T16:44:07",
+    "slug": "konferencja-brain-tumors-2018-from-biology-to-therapy",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp.oncographene.com/2018/06/20/konferencja-brain-tumors-2018-from-biology-to-therapy/",
+    "title": {
+      "rendered": "Konferencja Brain Tumors 2018: From Biology to Therapy"
+    },
+    "content": {
+      "rendered": "\n<p>Szczepaniak J., Grodzik M., Strojny B., Jaworski S., Sosnowska M., Bałaban J., Wierzbicki M., Winnicka A., Witkowska-Piłaszewicz O., Jagiełło A., Szmidt M. Influence of reduced Graphene oxides (rGO) on viability, cell cycle and apotosis in glioblastoma multiforme <em>in vitro</em>, \\r\\n\\r\\nBrain Tumors 2018: From Biology to Therapy, 21-23 June 2018, Warsaw, Brain Tumors 2018: From Biology to Therapy</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Szczepaniak J., Grodzik M., Strojny B., Jaworski S., Sosnowska M., Bałaban J., Wierzbicki M., Winnicka A., Witkowska-Piłaszewicz O., Jagiełło A., Szmidt M. Influence of reduced Graphene oxides (rGO) on viability, cell cycle and apotosis in glioblastoma multiforme in vitro, \\r\\n\\r\\nBrain Tumors 2018: From Biology to Therapy, 21-23 June 2018, Warsaw, Brain Tumors 2018: From Biology&hellip; <a class=\"more-link\" href=\"http://wp.oncographene.com/2018/06/20/konferencja-brain-tumors-2018-from-biology-to-therapy/\">Czytaj dalej <span class=\"screen-reader-text\">Konferencja Brain Tumors 2018: From Biology to Therapy</span></a></p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 14,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/13"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=13"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/13/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 21,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/13/revisions/21"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media/14"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media?parent=13"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/categories?post=13"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/tags?post=13"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "konrad",
+          "url": "http://wp.oncographene.com",
+          "description": "",
+          "link": "http://wp.oncographene.com/author/konrad/",
+          "slug": "konrad",
+          "avatar_urls": {
+            "24": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=24&d=mm&r=g",
+            "48": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=48&d=mm&r=g",
+            "96": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 14,
+          "date": "2021-03-20T17:35:16",
+          "slug": "brain-tum-2018",
+          "type": "attachment",
+          "link": "http://wp.oncographene.com/2018/06/20/konferencja-brain-tumors-2018-from-biology-to-therapy/brain-tum-2018/",
+          "title": {
+            "rendered": "brain-tum-2018"
+          },
+          "author": 1,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 820,
+            "height": 312,
+            "file": "2021/03/brain-tum-2018.png",
+            "sizes": {
+              "medium": {
+                "file": "brain-tum-2018-300x114.png",
+                "width": 300,
+                "height": 114,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/brain-tum-2018-300x114.png"
+              },
+              "thumbnail": {
+                "file": "brain-tum-2018-150x150.png",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/brain-tum-2018-150x150.png"
+              },
+              "medium_large": {
+                "file": "brain-tum-2018-768x292.png",
+                "width": 768,
+                "height": 292,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/brain-tum-2018-768x292.png"
+              },
+              "full": {
+                "file": "brain-tum-2018.png",
+                "width": 820,
+                "height": 312,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/brain-tum-2018.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/brain-tum-2018.png",
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media/14"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=14"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "http://wp.oncographene.com/category/bez-kategorii/",
+            "name": "Brak kategorii",
+            "slug": "bez-kategorii",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "date": "2018-06-20T17:27:00",
+    "date_gmt": "2018-06-20T15:27:00",
+    "guid": {
+      "rendered": "http://wp.oncographene.com/?p=8"
+    },
+    "modified": "2021-03-20T17:43:53",
+    "modified_gmt": "2021-03-20T16:43:53",
+    "slug": "wyklad-itmed-2018",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp.oncographene.com/2018/06/20/wyklad-itmed-2018/",
+    "title": {
+      "rendered": "Wykład ITMED 2018"
+    },
+    "content": {
+      "rendered": "\n<p>M.Grodzik. “Nanoparticles of carbon allotropes for glioma cancer therapy”. Invited lecture ITMED 2018 Manchaster, UK, Innovative Technologies for Medicine.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>M.Grodzik. “Nanoparticles of carbon allotropes for glioma cancer therapy”. Invited lecture ITMED 2018 Manchaster, UK, Innovative Technologies for Medicine.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 9,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/8"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=8"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/8/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 20,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/8/revisions/20"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media/9"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media?parent=8"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/categories?post=8"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/tags?post=8"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "konrad",
+          "url": "http://wp.oncographene.com",
+          "description": "",
+          "link": "http://wp.oncographene.com/author/konrad/",
+          "slug": "konrad",
+          "avatar_urls": {
+            "24": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=24&d=mm&r=g",
+            "48": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=48&d=mm&r=g",
+            "96": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 9,
+          "date": "2021-03-20T17:29:26",
+          "slug": "itmed2018",
+          "type": "attachment",
+          "link": "http://wp.oncographene.com/2018/06/20/wyklad-itmed-2018/itmed2018/",
+          "title": {
+            "rendered": "itmed2018"
+          },
+          "author": 1,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 940,
+            "height": 400,
+            "file": "2021/03/itmed2018.jpg",
+            "sizes": {
+              "medium": {
+                "file": "itmed2018-300x128.jpg",
+                "width": 300,
+                "height": 128,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/itmed2018-300x128.jpg"
+              },
+              "thumbnail": {
+                "file": "itmed2018-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/itmed2018-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "itmed2018-768x327.jpg",
+                "width": 768,
+                "height": 327,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/itmed2018-768x327.jpg"
+              },
+              "full": {
+                "file": "itmed2018.jpg",
+                "width": 940,
+                "height": 400,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/itmed2018.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            }
+          },
+          "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/itmed2018.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media/9"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=9"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "http://wp.oncographene.com/category/bez-kategorii/",
+            "name": "Brak kategorii",
+            "slug": "bez-kategorii",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "date": "2018-05-20T17:24:00",
+    "date_gmt": "2018-05-20T15:24:00",
+    "guid": {
+      "rendered": "http://wp.oncographene.com/?p=5"
+    },
+    "modified": "2021-03-20T17:43:12",
+    "modified_gmt": "2021-03-20T16:43:12",
+    "slug": "techconnect",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp.oncographene.com/2018/05/20/techconnect/",
+    "title": {
+      "rendered": "Konferencja TechConnect"
+    },
+    "content": {
+      "rendered": "\n<p>Grodzik, J. Szczepaniak, B. Strojny, S. Jaworski, M. Wierzbicki, J. Jagiello, E. Soltan, T. Mandat. “Graphenoid plates in glioma therapy”. TechConnect World Innovation Conference and Expo in Anaheim California, May 13-16, 2018., TechConnect World Innovation Conference and Expo.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Grodzik, J. Szczepaniak, B. Strojny, S. Jaworski, M. Wierzbicki, J. Jagiello, E. Soltan, T. Mandat. “Graphenoid plates in glioma therapy”. TechConnect World Innovation Conference and Expo in Anaheim California, May 13-16, 2018., TechConnect World Innovation Conference and Expo.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 6,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/5"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=5"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/5/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 19,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/5/revisions/19"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media/6"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media?parent=5"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/categories?post=5"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/tags?post=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "konrad",
+          "url": "http://wp.oncographene.com",
+          "description": "",
+          "link": "http://wp.oncographene.com/author/konrad/",
+          "slug": "konrad",
+          "avatar_urls": {
+            "24": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=24&d=mm&r=g",
+            "48": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=48&d=mm&r=g",
+            "96": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 6,
+          "date": "2021-03-20T17:22:21",
+          "slug": "tcw18",
+          "type": "attachment",
+          "link": "http://wp.oncographene.com/2018/05/20/techconnect/tcw18/",
+          "title": {
+            "rendered": "TCW18"
+          },
+          "author": 1,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 798,
+            "height": 200,
+            "file": "2021/03/TCW18.png",
+            "sizes": {
+              "medium": {
+                "file": "TCW18-300x75.png",
+                "width": 300,
+                "height": 75,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/TCW18-300x75.png"
+              },
+              "thumbnail": {
+                "file": "TCW18-150x150.png",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/TCW18-150x150.png"
+              },
+              "medium_large": {
+                "file": "TCW18-768x192.png",
+                "width": 768,
+                "height": 192,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/TCW18-768x192.png"
+              },
+              "full": {
+                "file": "TCW18.png",
+                "width": 798,
+                "height": 200,
+                "mime_type": "image/png",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/TCW18.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/TCW18.png",
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media/6"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=6"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "http://wp.oncographene.com/category/bez-kategorii/",
+            "name": "Brak kategorii",
+            "slug": "bez-kategorii",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "date": "2018-01-07T17:40:00",
+    "date_gmt": "2018-01-07T16:40:00",
+    "guid": {
+      "rendered": "http://wp.oncographene.com/?p=16"
+    },
+    "modified": "2021-03-20T17:42:44",
+    "modified_gmt": "2021-03-20T16:42:44",
+    "slug": "iconan-2017",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp.oncographene.com/2018/01/07/iconan-2017/",
+    "title": {
+      "rendered": "ICONAN 2017"
+    },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"331\" src=\"http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1024x331.jpg\" alt=\"\" class=\"wp-image-17\" srcset=\"http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1024x331.jpg 1024w, http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-300x97.jpg 300w, http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-768x248.jpg 768w, http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1536x496.jpg 1536w, http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1568x506.jpg 1568w, http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017.jpg 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>Grodzik, J. Szczepaniak, S. Jaworski, B. Strojny, J. Jagiełło, E. Sołtan.  Graphene plates and their derivates in glioma therapy.  International Conference on Nanomedicine and Nanobiotechnology. 25-27th Sep. 2017 Barcelona , International Conference on Nanomedicine and Nanobiotechnology.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Grodzik, J. Szczepaniak, S. Jaworski, B. Strojny, J. Jagiełło, E. Sołtan. Graphene plates and their derivates in glioma therapy.  International Conference on Nanomedicine and Nanobiotechnology. 25-27th Sep. 2017 Barcelona , International Conference on Nanomedicine and Nanobiotechnology.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 17,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [1],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/16"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=16"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/16/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 18,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/posts/16/revisions/18"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media/17"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/media?parent=16"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/categories?post=16"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp.oncographene.com/wp-json/wp/v2/tags?post=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "konrad",
+          "url": "http://wp.oncographene.com",
+          "description": "",
+          "link": "http://wp.oncographene.com/author/konrad/",
+          "slug": "konrad",
+          "avatar_urls": {
+            "24": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=24&d=mm&r=g",
+            "48": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=48&d=mm&r=g",
+            "96": "http://2.gravatar.com/avatar/b54c450a63f0f998506a87c34948ded2?s=96&d=mm&r=g"
+          },
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 17,
+          "date": "2021-03-20T17:41:22",
+          "slug": "iconan_2017",
+          "type": "attachment",
+          "link": "http://wp.oncographene.com/2018/01/07/iconan-2017/iconan_2017/",
+          "title": {
+            "rendered": "ICONAN_2017"
+          },
+          "author": 1,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 620,
+            "file": "2021/03/ICONAN_2017.jpg",
+            "sizes": {
+              "medium": {
+                "file": "ICONAN_2017-300x97.jpg",
+                "width": 300,
+                "height": 97,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-300x97.jpg"
+              },
+              "large": {
+                "file": "ICONAN_2017-1024x331.jpg",
+                "width": 1024,
+                "height": 331,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1024x331.jpg"
+              },
+              "thumbnail": {
+                "file": "ICONAN_2017-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "ICONAN_2017-768x248.jpg",
+                "width": 768,
+                "height": 248,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-768x248.jpg"
+              },
+              "1536x1536": {
+                "file": "ICONAN_2017-1536x496.jpg",
+                "width": 1536,
+                "height": 496,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1536x496.jpg"
+              },
+              "post-thumbnail": {
+                "file": "ICONAN_2017-1568x506.jpg",
+                "width": 1568,
+                "height": 506,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017-1568x506.jpg"
+              },
+              "full": {
+                "file": "ICONAN_2017.jpg",
+                "width": 1920,
+                "height": 620,
+                "mime_type": "image/jpeg",
+                "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "http://wp.oncographene.com/wp-content/uploads/2021/03/ICONAN_2017.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media/17"
+              }
+            ],
+            "collection": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "http://wp.oncographene.com/wp-json/wp/v2/comments?post=17"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "http://wp.oncographene.com/category/bez-kategorii/",
+            "name": "Brak kategorii",
+            "slug": "bez-kategorii",
+            "taxonomy": "category",
+            "_links": {
+              "self": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories/1"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "http://wp.oncographene.com/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  }
+]

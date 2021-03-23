@@ -1,0 +1,23 @@
+{
+  "name": "oncographene-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@icon/linea-basic": "^1.0.0-alpha.4",
+    "boxicons": "^2.0.7",
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "vite": "^2.1.2"
+  }
+}
