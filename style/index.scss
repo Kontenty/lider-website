@@ -6,43 +6,7 @@ $black: #171c24;
 
 @import "reset";
 @import "modal";
-
-body {
-  font-family: inconsolata;
-  background: $bg;
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 100px;
-}
-img {
-  max-width: 100%;
-}
-input,
-textarea {
-  border: none;
-  outline: none;
-  background: none;
-  padding: 10px 15px;
-  box-shadow: 0 0 2px 2px rgba(black, 0.15);
-  border-radius: 5px;
-  transition: all 200ms ease-out;
-  &:focus {
-    box-shadow: 0 0 4px 2px rgba(black, 0.3);
-  }
-}
-.container {
-  max-width: 1640px;
-  margin: 0 auto;
-  padding: 0 15px;
-  @media screen and (max-width: 992px) {
-    width: 96%;
-  }
-}
-.bx {
-  color: $orange;
-}
+@import "common";
 
 header {
   padding: 10px 0;
@@ -80,22 +44,82 @@ header {
   }
 }
 
-.section-caption {
+section.hero {
+  height: calc(100vh - 64px);
   display: flex;
-  align-items: center;
-  h2 {
-    font-size: 16px;
-    font-weight: 300;
+  article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .shape {
-    width: 58px;
-    height: 1px;
-    background: $gray;
-    margin-top: 12px;
-    margin-left: 2px;
-    margin-right: 5px;
+  aside {
+    position: relative;
+    flex: 3;
+    perspective: 400px;
+  }
+  h1 {
+    text-align: center;
+  }
+  img {
+    position: absolute;
+    transition: all 0.5s linear;
+  }
+  .hero-img-1 {
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 14px -3px rgb(0 0 0 / 30%);
+    z-index: 10;
+  }
+  .hero-img-2 {
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 14px -3px rgb(0 0 0 / 30%);
+    z-index: 11;
+  }
+  .hero-img-3 {
+    bottom: 20px;
+    left: 10%;
+    z-index: 9;
+  }
+  button {
+    color: #fff;
+    background-color: #f79646;
+    background: linear-gradient(
+      100deg,
+      rgb(247, 150, 70) 0%,
+      rgb(249, 178, 119) 34%,
+      $gray 34%,
+      $black 40%,
+      rgb(247, 150, 70) 40%,
+      rgb(249, 178, 119) 48%,
+      $gray 48%,
+      $black 56%,
+      rgb(247, 150, 70) 56%,
+      rgb(249, 178, 119) 66%,
+      $gray 66%,
+      $black 100%
+    );
+    background-size: 300%;
+    background-position: 0% 100%;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    width: 200px;
+    border-radius: 55px;
+    padding: 15px 35px;
+    box-shadow: 0 5px 15px -5px #f79646;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background-position: 100% 0%;
+      box-shadow: 0 7px 25px -5px #b15d18;
+      letter-spacing: 2px;
+    }
   }
 }
+
 .section-title {
   font-size: 48px;
   font-weight: 600;
@@ -157,6 +181,13 @@ section.leader {
     margin: 20px;
     path {
       fill: $orange;
+      transition: fill 0.2s ease-out;
+    }
+    &.linkedin-icon:hover path {
+      fill: #0072b1;
+    }
+    &.rg-icon:hover path {
+      fill: #41ba9b;
     }
   }
 }

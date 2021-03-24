@@ -63,6 +63,32 @@ function showPost(index) {
   });
 }
 
+function moveHero() {
+  const getDeg = (pos, size) => {
+    const multiPlicator = pos / size < 0.35 ? -1 : pos / size > 0.65 ? 1 : 0;
+    return multiPlicator * 1;
+  };
+
+  console.log("move hero");
+  document.querySelectorAll(".hero .move").forEach((img) => {
+    img.addEventListener("mousemove", (e) => {
+      let x = e.offsetX;
+      let y = e.offsetY;
+      let w = img.offsetWidth;
+      let h = img.offsetHeight;
+      console.log({ x, y, w, h });
+      // img.style.transform = "rotate3d(0.1, -1, 0.5, 10deg) translateZ(-15px)";
+      img.style.transform = `rotateX(${-getDeg(y, h)}deg) rotateY(${getDeg(
+        x,
+        w
+      )}deg)`;
+    });
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    });
+  });
+}
+
 window.onload = async () => {
   const data = await getWpData();
   postsData = data;
@@ -85,5 +111,6 @@ window.onload = async () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   initJump();
+  moveHero();
   initMap();
 });
