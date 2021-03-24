@@ -1,6 +1,7 @@
 body {
   font-family: inconsolata;
   background: $bg;
+  padding-top: 64px;
 }
 main {
   display: grid;
@@ -49,5 +50,14 @@ textarea {
     margin-top: 12px;
     margin-left: 2px;
     margin-right: 5px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

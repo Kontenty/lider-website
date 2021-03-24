@@ -9,7 +9,19 @@ $black: #171c24;
 @import "common";
 
 header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   padding: 10px 0;
+  background-color: white;
+  z-index: 100;
+
+  &.sticky {
+    position: fixed;
+    animation: slideDown 0.3s ease;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;

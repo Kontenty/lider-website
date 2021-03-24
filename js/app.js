@@ -1,7 +1,11 @@
+import gsap from "gsap";
 import jump from "jump.js";
 import "boxicons/css/boxicons.min.css";
 
 import { initMap } from "./map";
+
+let postsData = [];
+let lastScrollPosition = 0;
 
 const getWpData = async () => {
   const res = await fetch(
@@ -31,8 +35,6 @@ function getImg(post) {
   return "/images/img300_200.jpg";
 }
 
-let postsData = [];
-
 function showPost(index) {
   const modal = document.querySelector("#post-modal");
   const post = postsData[index];
@@ -58,7 +60,6 @@ function showPost(index) {
       setTimeout(() => {
         modal.style.display = "none";
       }, 500);
-      // tl.reverse();
     }
   });
 }
@@ -69,24 +70,34 @@ function moveHero() {
     return multiPlicator * 1;
   };
 
-  console.log("move hero");
   document.querySelectorAll(".hero .move").forEach((img) => {
     img.addEventListener("mousemove", (e) => {
       let x = e.offsetX;
       let y = e.offsetY;
       let w = img.offsetWidth;
       let h = img.offsetHeight;
-      console.log({ x, y, w, h });
       // img.style.transform = "rotate3d(0.1, -1, 0.5, 10deg) translateZ(-15px)";
       img.style.transform = `rotateX(${-getDeg(y, h)}deg) rotateY(${getDeg(
         x,
         w
-      )}deg)`;
+      )}deg) translateZ(7px)`;
     });
     img.addEventListener("mouseleave", () => {
       img.style.transform = `rotateX(0deg) rotateY(0deg)`;
     });
   });
+}
+
+function showNav(e) {
+  let currentScrollPosition = window.scrollY;
+  const header = document.querySelector(".main-header");
+  if (currentScrollPosition < lastScrollPosition) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+
+  lastScrollPosition = currentScrollPosition;
 }
 
 window.onload = async () => {
@@ -113,4 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initJump();
   moveHero();
   initMap();
+
+  document.addEventListener("scroll", (e) => {
+    showNav(e);
+  });
 });
