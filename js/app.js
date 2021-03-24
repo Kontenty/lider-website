@@ -1,10 +1,7 @@
-import "../style/index.scss";
-import "@icon/linea-basic/linea-basic.css";
+import jump from "jump.js";
 import "boxicons/css/boxicons.min.css";
 
 import { initMap } from "./map";
-
-initMap();
 
 const getWpData = async () => {
   const res = await fetch(
@@ -12,11 +9,18 @@ const getWpData = async () => {
     // "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
   );
   const data = await res.json();
-  console.log({ data });
   return data;
 };
 
-const getImg = (post) => {
+function initJump() {
+  const buttons = document.querySelectorAll(".jump");
+  buttons.forEach((btn) => {
+    const target = btn.getAttribute("data-target");
+    btn.addEventListener("click", (e) => jump(target, { offset: -20 }));
+  });
+}
+
+function getImg(post) {
   if (
     post._embedded.hasOwnProperty("wp:featuredmedia") &&
     post._embedded["wp:featuredmedia"].length > 0 &&
@@ -25,31 +29,48 @@ const getImg = (post) => {
     return post._embedded["wp:featuredmedia"]["0"].source_url;
   }
   return "/images/img300_200.jpg";
-};
+}
 
 let postsData = [];
 
-function showPost(id) {
-  console.log(id);
+function showPost(index) {
   const modal = document.querySelector("#post-modal");
-  const post = postsData.find((p) => p.id === id);
+  const post = postsData[index];
   if (post) {
-    document.querySelector("#post-modal .modal-content").innerHTML =
+    document.querySelector("#post-modal .modal-body").innerHTML =
       post.content.rendered;
-    modal.classList.add("show");
+    document.querySelector(
+      "#post-modal .modal-img"
+    ).innerHTML = `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`;
+    document.querySelector(
+      "#post-modal .modal-title"
+    ).innerHTML = `<h3>${post.title.rendered}</h3>`;
+    // tl.play();
+    modal.style.display = "block";
+    setTimeout(() => {
+      modal.classList.add("show");
+    }, 50);
   }
-  console.log(post);
+
+  modal.addEventListener("click", (event) => {
+    if (event.target.id === "post-modal") {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 500);
+      // tl.reverse();
+    }
+  });
 }
 
 window.onload = async () => {
   const data = await getWpData();
-  console.log({ data });
   postsData = data;
 
-  data.slice(0, 3).forEach((post) => {
+  data.slice(0, 3).forEach((post, i) => {
     const newDiv = document.createElement("div");
     newDiv.className = "news-card";
-    newDiv.addEventListener("click", () => showPost(post.id));
+    newDiv.addEventListener("click", () => showPost(i));
     newDiv.innerHTML = `<div class="img-box">
       <img src=${getImg(post)} alt="post" />
       </div>
@@ -61,3 +82,8 @@ window.onload = async () => {
     wrapper.appendChild(newDiv);
   });
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  initJump();
+  initMap();
+});

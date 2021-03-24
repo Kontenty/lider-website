@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: $dark-gray;
+  font-size: 16px;
 }
 
 input[type="submit"],
@@ -14,7 +15,7 @@ button {
 
 p {
   margin: 0 0 20px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.68;
 }
 
@@ -25,5 +26,24 @@ h4,
 h5,
 h6 {
   color: $black;
-  font-weight: 300;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
 }

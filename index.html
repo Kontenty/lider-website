@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oncographene</title>
+    <link rel="stylesheet" href="./style/index.scss" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="/js/app.js"></script>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="container">
         <img src="./images/logo.png" alt="logo" />
         <nav>
-          <div class="nav-item"><i class="bx bx-home"></i>START</div>
-          <div class="nav-item"><i class="bx bx-carousel"></i> PROJEKT</div>
-          <div class="nav-item"><i class="bx bx-user"></i> ZESPÓŁ</div>
-          <div class="nav-item"><i class="bx bx-news"></i> NOWOŚCI</div>
-          <div class="nav-item"><i class="bx bx-mobile"></i> KONTAKT</div>
+          <div class="nav-item jump" role="link" data-target="#top">
+            <i class="bx bx-home"></i>START
+          </div>
+          <div class="nav-item jump" role="link" data-target="#project">
+            <i class="bx bx-carousel"></i> PROJEKT
+          </div>
+          <div class="nav-item jump" role="link" data-target="#team">
+            <i class="bx bx-user"></i> ZESPÓŁ
+          </div>
+          <div class="nav-item jump" role="link" data-target="#news">
+            <i class="bx bx-news"></i> NOWOŚCI
+          </div>
+          <div class="nav-item jump" role="link" data-target="#contact">
+            <i class="bx bx-mobile"></i> KONTAKT
+          </div>
         </nav>
       </div>
     </header>
     <section class="hero"></section>
     <main class="container">
-      <section class="info">
+      <section class="info" id="project">
         <aside></aside>
         <article>
           <div class="section-caption">
@@ -173,7 +185,7 @@
         </div>
       </section>
       <!-- team section -->
-      <section class="team">
+      <section class="team" id="team">
         <div class="section-caption">
           <span>c.</span><span class="shape"></span>
           <h2>personel</h2>
@@ -225,7 +237,7 @@
         </div>
       </section>
       <!-- news section -->
-      <section class="news">
+      <section class="news" id="news">
         <div class="section-caption">
           <span>d.</span><span class="shape"></span>
           <h2>dowiedz się co nowego</h2>
@@ -234,7 +246,7 @@
         <div class="news-wrapper" id="news-wrapper"></div>
       </section>
       <!-- contact section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="form-col">
           <div class="section-caption">
             <span>e.</span><span class="shape"></span>
@@ -279,13 +291,14 @@
       <span class="line"></span>
       <span>Oncographene &copy; 2016-2021</span>
     </footer>
-    <div class="modal" id="post-modal">
-      <div class="modal-dialog">
+    <div class="modal" id="post-modal" tabindex="-1">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
+          <div class="modal-title"></div>
+          <div class="modal-img"></div>
           <div class="modal-body"></div>
         </div>
       </div>
     </div>
-    <script type="module" src="/js/app.js"></script>
   </body>
 </html>
