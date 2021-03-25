@@ -32,8 +32,13 @@ textarea {
     width: 96%;
   }
 }
-.bx {
+.bx,
+.lbi {
   color: $orange;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
 }
 
 .section-caption {
@@ -60,4 +65,12 @@ textarea {
   100% {
     transform: translateY(0);
   }
+}
+
+%abs-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

@@ -16,7 +16,8 @@
     "boxicons": "^2.0.7",
     "gsap": "^3.6.0",
     "jump.js": "^1.0.2",
-    "leaflet": "^1.7.1"
+    "leaflet": "^1.7.1",
+    "sal.js": "^0.8.4"
   },
   "devDependencies": {
     "sass": "^1.32.8",

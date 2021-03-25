@@ -1,5 +1,6 @@
-import gsap from "gsap";
+import sal from "sal.js";
 import jump from "jump.js";
+import gsap from "gsap";
 import "boxicons/css/boxicons.min.css";
 
 import { initMap } from "./map";
@@ -100,6 +101,34 @@ function showNav(e) {
   lastScrollPosition = currentScrollPosition;
 }
 
+function finishPreload() {
+  const target = document.querySelector("#preload");
+  target.classList.add("finish");
+  document.body.classList.remove("loading");
+
+  gsap.from(".hero h1", {
+    transform: "scale(0.9)",
+    opacity: 0,
+
+    duration: 1,
+    delay: 0.1,
+  });
+  gsap.from(".hero aside", {
+    x: 50,
+    opacity: 0,
+    duration: 1,
+  });
+  gsap.from(".hero button", {
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+  });
+
+  setTimeout(() => {
+    target.style.display = "none";
+  }, 410);
+}
+
 window.onload = async () => {
   const data = await getWpData();
   postsData = data;
@@ -118,12 +147,17 @@ window.onload = async () => {
     // document.body.insertBefore(newDiv, my_div);
     wrapper.appendChild(newDiv);
   });
+
+  setTimeout(() => {
+    finishPreload();
+  }, 1000);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   initJump();
   moveHero();
   initMap();
+  sal();
 
   document.addEventListener("scroll", (e) => {
     showNav(e);

@@ -1,0 +1,14 @@
+$sal-animation-delay: 0.2s !default;
+$sal-animation-duration: 1s !default;
+
+@import "sal.js/src/sal.scss";
+@import "@icon/linea-basic/linea-basic.css";
+
+[data-sal] {
+  transition-duration: $sal-animation-duration;
+  transition-delay: $sal-animation-delay;
+  transition-timing-function: var(
+    --sal-easing,
+    map-get($sal-easings, "ease-out-back")
+  );
+}

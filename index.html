@@ -11,9 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
     <script type="module" src="/js/app.js"></script>
   </head>
-  <body id="top">
+  <body id="top" class="loading">
+    <div class="preleoad-overlay" id="preload">
+      <div class="left">
+        <img src="./images/g-logo.png" alt="graphene" />
+      </div>
+      <div class="right">
+        <img src="./images/g-logo.png" alt="graphene" />
+      </div>
+      <img src="./images/g-logo.png" alt="graphene" class="pulse-img" />
+    </div>
     <header class="main-header">
       <div class="container">
         <img src="./images/logo.png" alt="logo" />
@@ -59,13 +69,13 @@
       <section class="info" id="project">
         <aside></aside>
         <article>
-          <div class="section-caption">
+          <div class="section-caption" data-sal="slide-right">
             <span>a.</span><span class="shape"></span>
             <h2>kluczowe informacje</h2>
           </div>
-          <h1 class="section-title">Projekt</h1>
+          <h1 class="section-title" data-sal="slide-up">Projekt</h1>
           <div class="info-item">
-            <div class="icon"><i class="bx bx-book-reader"></i></div>
+            <div class="icon"><i class="lbi lbi-notebook-pencil"></i></div>
             <div class="text">
               <h4>Tytuł</h4>
               <p>
@@ -76,7 +86,7 @@
             </div>
           </div>
           <div class="info-item">
-            <div class="icon"><i class="bx bx-credit-card-alt"></i></div>
+            <div class="icon"><i class="lbi lbi-target"></i></div>
             <div class="text">
               <h4>Cel</h4>
               <p>
@@ -93,7 +103,7 @@
             </div>
           </div>
           <div class="info-item">
-            <div class="icon"><i class="bx bx-crosshair"></i></div>
+            <div class="icon"><i class="lbi lbi-case"></i></div>
             <div class="text">
               <h4>Finansowanie</h4>
               <p>
@@ -119,11 +129,13 @@
       <!-- leader section -->
       <section class="leader">
         <article>
-          <div class="section-caption">
+          <div class="section-caption" data-sal="slide-right">
             <span>b.</span><span class="shape"></span>
             <h2>kierownik projektu</h2>
           </div>
-          <h1 class="section-title">Dr hab. Marta Grodzik</h1>
+          <h1 class="section-title" data-sal="slide-up">
+            Dr hab. Marta Grodzik
+          </h1>
           <p>
             Marta Grodzik – adiunkt, naukowiec i nauczyciel akademicki,
             zatrudniona w Zakładzie Nanobiotechnologii na Wydziale Nauk o
@@ -204,11 +216,11 @@
       </section>
       <!-- team section -->
       <section class="team" id="team">
-        <div class="section-caption">
+        <div class="section-caption" data-sal="slide-right">
           <span>c.</span><span class="shape"></span>
           <h2>personel</h2>
         </div>
-        <h1 class="section-title">Członkowie zespołu</h1>
+        <h1 class="section-title" data-sal="slide-up">Członkowie zespołu</h1>
         <div class="person-row">
           <div class="card">
             <figure class="avatar">
@@ -256,21 +268,21 @@
       </section>
       <!-- news section -->
       <section class="news" id="news">
-        <div class="section-caption">
+        <div class="section-caption" data-sal="slide-right">
           <span>d.</span><span class="shape"></span>
           <h2>dowiedz się co nowego</h2>
         </div>
-        <h1 class="section-title">Aktualności</h1>
+        <h1 class="section-title" data-sal="slide-up">Aktualności</h1>
         <div class="news-wrapper" id="news-wrapper"></div>
       </section>
       <!-- contact section -->
       <section class="contact" id="contact">
         <div class="form-col">
-          <div class="section-caption">
+          <div class="section-caption" data-sal="slide-right">
             <span>e.</span><span class="shape"></span>
             <h2>bądź w kontakcie</h2>
           </div>
-          <h1 class="section-title">Kontakt</h1>
+          <h1 class="section-title" data-sal="slide-up">Kontakt</h1>
           <form action="">
             <label for="name">Imię i nazwisko</label>
             <input type="text" name="name" />
