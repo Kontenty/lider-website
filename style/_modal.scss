@@ -4,11 +4,16 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    111.88deg,
+    rgba(200, 200, 200, 0.45) 0%,
+    rgba(200, 200, 200, 0.12) 100%
+  );
+  backdrop-filter: blur(20px);
   overflow-y: hidden;
   display: none;
-  opacity: 0;
   z-index: 1000;
+  opacity: 0;
   transition: opacity 0.3s ease-out;
 
   &.show {
@@ -20,14 +25,38 @@
   }
   .modal-dialog {
     position: relative;
+    display: flex;
+    align-items: center;
     width: auto;
     margin: 0.5rem;
     opacity: 0;
     transform: translateY(-15%);
     transition: all 0.4s ease-out;
     @media (min-width: 1000px) {
-      max-width: 720px;
+      max-width: 760px;
       margin: 1.75rem auto;
+    }
+    .bx {
+      font-size: 48px;
+      color: $gray;
+      cursor: pointer;
+      &.disabled {
+        color: $gray;
+      }
+    }
+    button.switch-post {
+      position: relative;
+      background: white;
+      padding: 20px;
+      border-radius: 50%;
+      box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1),
+        0 8px 20px rgba(166, 173, 201, 0.4);
+      &:first-child {
+        right: 10px;
+      }
+      &:last-child {
+        left: 10px;
+      }
     }
   }
   .modal-content {
@@ -39,9 +68,23 @@
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
-    outline: 0;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1),
+      0 8px 20px rgba(166, 173, 201, 0.4);
+    transition: all 0.4s ease-out;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 3px;
+      background: none;
+      i.bx {
+        color: $gray;
+        font-size: 32px;
+      }
+    }
   }
 
   .modal-body {

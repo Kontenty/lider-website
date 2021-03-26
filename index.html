@@ -74,7 +74,7 @@
             <h2>kluczowe informacje</h2>
           </div>
           <h1 class="section-title" data-sal="slide-up">Projekt</h1>
-          <div class="info-item">
+          <div class="info-item" data-sal="fade">
             <div class="icon"><i class="lbi lbi-notebook-pencil"></i></div>
             <div class="text">
               <h4>Tytuł</h4>
@@ -85,7 +85,7 @@
               </p>
             </div>
           </div>
-          <div class="info-item">
+          <div class="info-item" data-sal="fade" data-sal-delay="100">
             <div class="icon"><i class="lbi lbi-target"></i></div>
             <div class="text">
               <h4>Cel</h4>
@@ -102,7 +102,7 @@
               </p>
             </div>
           </div>
-          <div class="info-item">
+          <div class="info-item" data-sal="fade" data-sal-delay="200">
             <div class="icon"><i class="lbi lbi-case"></i></div>
             <div class="text">
               <h4>Finansowanie</h4>
@@ -155,7 +155,9 @@
           </p>
         </article>
         <aside>
-          <img src="./images/marta-grodzik-mikroskop.jpg" alt="portret" />
+          <div data-sal="fade">
+            <img src="./images/marta-grodzik-mikroskop.jpg" alt="portret" />
+          </div>
         </aside>
         <div class="social-bar">
           <a
@@ -323,11 +325,18 @@
     </footer>
     <div class="modal" id="post-modal" tabindex="-1">
       <div class="modal-dialog" role="document">
+        <button class="switch-post" id="next-post">
+          <i class="bx bx-chevron-left-square"></i>
+        </button>
         <div class="modal-content">
+          <button><i class="bx bx-x-circle"></i></button>
           <div class="modal-title"></div>
           <div class="modal-img"></div>
           <div class="modal-body"></div>
         </div>
+        <button class="switch-post" id="prev-post">
+          <i class="bx bx-chevron-right-square"></i>
+        </button>
       </div>
     </div>
   </body>

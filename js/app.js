@@ -7,6 +7,8 @@ import { initMap } from "./map";
 
 let postsData = [];
 let lastScrollPosition = 0;
+let currentPostIndex = 0;
+let modal, prevPostBtn, nextPostBtn;
 
 const getWpData = async () => {
   const res = await fetch(
@@ -37,32 +39,60 @@ function getImg(post) {
 }
 
 function showPost(index) {
-  const modal = document.querySelector("#post-modal");
+  console.log({ index });
   const post = postsData[index];
-  if (post) {
-    document.querySelector("#post-modal .modal-body").innerHTML =
-      post.content.rendered;
-    document.querySelector(
-      "#post-modal .modal-img"
-    ).innerHTML = `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`;
-    document.querySelector(
-      "#post-modal .modal-title"
-    ).innerHTML = `<h3>${post.title.rendered}</h3>`;
-    // tl.play();
+  currentPostIndex = index;
+  document.querySelector("#post-modal .modal-body").innerHTML =
+    post.content.rendered;
+  document.querySelector(
+    "#post-modal .modal-img"
+  ).innerHTML = `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`;
+  document.querySelector(
+    "#post-modal .modal-title"
+  ).innerHTML = `<h3>${post.title.rendered}</h3>`;
+}
+const closeModal = () => {
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 500);
+};
+
+function initModal() {
+  modal = document.querySelector("#post-modal");
+  prevPostBtn = document.querySelector("#prev-post");
+  nextPostBtn = document.querySelector("#next-post");
+  const modalContent = document.querySelector(".modal-content");
+  document
+    .querySelector(".modal-content i.bx")
+    .addEventListener("click", closeModal);
+
+  prevPostBtn.addEventListener("click", () => {
+    if (currentPostIndex < postsData.length - 1) {
+      showPost(currentPostIndex + 1);
+    }
+  });
+  nextPostBtn.addEventListener("click", () => {
+    if (currentPostIndex > 0) {
+      showPost(currentPostIndex - 1);
+    }
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target.id === "post-modal") {
+      closeModal();
+    }
+  });
+}
+
+function showPostModal(index) {
+  if (postsData[index]) {
+    showPost(index);
     modal.style.display = "block";
     setTimeout(() => {
       modal.classList.add("show");
     }, 50);
   }
-
-  modal.addEventListener("click", (event) => {
-    if (event.target.id === "post-modal") {
-      modal.classList.remove("show");
-      setTimeout(() => {
-        modal.style.display = "none";
-      }, 500);
-    }
-  });
 }
 
 function moveHero() {
@@ -136,7 +166,7 @@ window.onload = async () => {
   data.slice(0, 3).forEach((post, i) => {
     const newDiv = document.createElement("div");
     newDiv.className = "news-card";
-    newDiv.addEventListener("click", () => showPost(i));
+    newDiv.addEventListener("click", () => showPostModal(i));
     newDiv.innerHTML = `<div class="img-box">
       <img src=${getImg(post)} alt="post" />
       </div>
@@ -144,7 +174,6 @@ window.onload = async () => {
 
     // add the newly created element and it's content into the DOM
     const wrapper = document.getElementById("news-wrapper");
-    // document.body.insertBefore(newDiv, my_div);
     wrapper.appendChild(newDiv);
   });
 
@@ -158,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
   moveHero();
   initMap();
   sal();
+  initModal();
 
   document.addEventListener("scroll", (e) => {
     showNav(e);
