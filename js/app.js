@@ -14,7 +14,8 @@ let modal, prevPostBtn, nextPostBtn;
 const getWpData = async () => {
   const res = await fetch(
     // "posts.json"
-    "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
+    // "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
+    "/api.php"
   );
   const data = await res.json();
   return data;
