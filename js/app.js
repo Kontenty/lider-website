@@ -2,18 +2,19 @@ import sal from "sal.js";
 import jump from "jump.js";
 import gsap from "gsap";
 import "boxicons/css/boxicons.min.css";
+import imgPlaceholder from "../images/img300_200.jpg";
 
 import { initMap } from "./map";
 
-let postsData = [];
+const postsData = [];
 let lastScrollPosition = 0;
 let currentPostIndex = 0;
 let modal, prevPostBtn, nextPostBtn;
 
 const getWpData = async () => {
   const res = await fetch(
-    "posts.json"
-    // "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
+    // "posts.json"
+    "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
   );
   const data = await res.json();
   return data;
@@ -35,18 +36,19 @@ function getImg(post) {
   ) {
     return post._embedded["wp:featuredmedia"]["0"].source_url;
   }
-  return "/images/img300_200.jpg";
+  return imgPlaceholder;
 }
 
 function showPost(index) {
-  console.log({ index });
   const post = postsData[index];
   currentPostIndex = index;
   document.querySelector("#post-modal .modal-body").innerHTML =
     post.content.rendered;
-  document.querySelector(
-    "#post-modal .modal-img"
-  ).innerHTML = `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`;
+  document.querySelector("#post-modal .modal-img").innerHTML = post._embedded[
+    "wp:featuredmedia"
+  ]
+    ? `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`
+    : "";
   document.querySelector(
     "#post-modal .modal-title"
   ).innerHTML = `<h3>${post.title.rendered}</h3>`;
@@ -62,7 +64,6 @@ function initModal() {
   modal = document.querySelector("#post-modal");
   prevPostBtn = document.querySelector("#prev-post");
   nextPostBtn = document.querySelector("#next-post");
-  const modalContent = document.querySelector(".modal-content");
   document
     .querySelector(".modal-content i.bx")
     .addEventListener("click", closeModal);
@@ -161,7 +162,7 @@ function finishPreload() {
 
 window.onload = async () => {
   const data = await getWpData();
-  postsData = data;
+  postsData.push(...data);
 
   data.slice(0, 3).forEach((post, i) => {
     const newDiv = document.createElement("div");

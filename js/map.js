@@ -1,5 +1,4 @@
 import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 
 export function initMap() {
   const map = L.map("map-container").setView([52.1588, 21.0459], 16);
