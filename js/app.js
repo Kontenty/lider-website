@@ -6,20 +6,10 @@ import imgPlaceholder from "../images/img300_200.jpg";
 
 import { initMap } from "./map";
 
-const postsData = [];
+let postsData = [];
 let lastScrollPosition = 0;
 let currentPostIndex = 0;
 let modal, prevPostBtn, nextPostBtn;
-
-const getWpData = async () => {
-  const res = await fetch(
-    // "posts.json"
-    // "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
-    "/api.php"
-  );
-  const data = await res.json();
-  return data;
-};
 
 function initJump() {
   const buttons = document.querySelectorAll(".jump");
@@ -48,7 +38,7 @@ function showPost(index) {
   document.querySelector("#post-modal .modal-img").innerHTML = post._embedded[
     "wp:featuredmedia"
   ]
-    ? `<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="post"/>`
+    ? `<img src=${getImg(post)} alt="post"/>`
     : "";
   document.querySelector(
     "#post-modal .modal-title"
@@ -161,23 +151,38 @@ function finishPreload() {
   }, 410);
 }
 
-window.onload = async () => {
-  const data = await getWpData();
-  postsData.push(...data);
+// load posts from api and insert to dom
+window.onload = () => {
+  fetch(
+    // "posts.json"
+    // "http://wp.oncographene.com/wp-json/wp/v2/posts?_embed"
+    "/api.php/posts"
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      const replaced = JSON.stringify(data).replace(
+        /http:\/\/wp.oncographene.com\/wp-content\/uploads/g,
+        "/api.php/img?file=http://wp.oncographene.com/wp-content/uploads"
+      );
+      const newData = JSON.parse(replaced);
+      console.log({ newData });
+      postsData = newData;
 
-  data.slice(0, 3).forEach((post, i) => {
-    const newDiv = document.createElement("div");
-    newDiv.className = "news-card";
-    newDiv.addEventListener("click", () => showPostModal(i));
-    newDiv.innerHTML = `<div class="img-box">
-      <img src=${getImg(post)} alt="post" />
-      </div>
-      <h3>${post.title.rendered}</h3>`;
+      newData.slice(0, 3).forEach((post, i) => {
+        const newDiv = document.createElement("div");
+        newDiv.className = "news-card";
+        newDiv.addEventListener("click", () => showPostModal(i));
+        newDiv.innerHTML = `<div class="img-box">
+        <img src=${getImg(post)} alt="post" />
+        </div>
+        <h3>${post.title.rendered}</h3>`;
 
-    // add the newly created element and it's content into the DOM
-    const wrapper = document.getElementById("news-wrapper");
-    wrapper.appendChild(newDiv);
-  });
+        // add the newly created element and it's content into the DOM
+        const wrapper = document.getElementById("news-wrapper");
+        wrapper.appendChild(newDiv);
+      });
+    })
+    .catch((e) => console.error("Posts error:", e));
 
   setTimeout(() => {
     finishPreload();
