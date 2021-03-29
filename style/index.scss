@@ -3,6 +3,7 @@ $orange: #f79646;
 $bg: rgb(247, 247, 247);
 $gray: #474747;
 $black: #171c24;
+$spacing: 4rem;
 
 @import "vendor";
 @import "reset";
@@ -172,18 +173,22 @@ header {
 section.hero {
   height: calc(100vh - 64px);
   display: flex;
+  flex-wrap: wrap;
   article {
-    flex: 3;
+    flex: 3 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 100px;
+    padding: 0 15px;
+    height: 50%;
   }
   aside {
     position: relative;
-    flex: 4;
+    flex: 4 570px;
     perspective: 400px;
+    height: 50%;
+    padding: 0 15px;
   }
   h1 {
     text-align: center;
@@ -211,6 +216,7 @@ section.hero {
     max-height: 90%;
     max-width: 90%;
     left: 5%;
+    @extend %img-shadow;
     z-index: 9;
   }
   button {
@@ -248,29 +254,45 @@ section.hero {
       letter-spacing: 2px;
     }
   }
+  @media screen and (min-width: 1000px) {
+    article {
+      padding: 0 20px 100px;
+      height: unset;
+    }
+    aside {
+      padding: 0;
+      height: unset;
+    }
+  }
 }
 
 section.info {
   background: white;
-  padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
-  padding-top: 70px;
+  padding-top: $spacing;
   aside {
     background-image: url("../images/grafika-grafen.png");
     background-size: cover;
     background-position: center center;
-    padding-top: 96px;
+    min-height: 300px;
   }
   .founders {
     display: flex;
-    margin-top: 70px;
+    flex-wrap: wrap;
+    margin-top: $spacing;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 15px;
+    aside {
+      padding-top: 96px;
+    }
   }
 }
 .info-item {
   display: flex;
-  margin-top: 70px;
+  margin-top: $spacing;
   h4 {
     margin: 8px 0 5px;
     line-height: 1.3;
@@ -289,11 +311,14 @@ section.info {
 }
 
 section.leader {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  aside {
-    padding-top: 96px;
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    aside {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding-top: 96px;
+    }
   }
 }
 .social-bar {
@@ -345,12 +370,14 @@ section.team {
   }
   .person-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 // --- news
 .news-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   .news-card {
     width: 300px;
@@ -379,7 +406,10 @@ section.team {
 
 section.contact {
   display: grid;
-  grid-template-columns: 4fr 5fr 2fr;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 768 px) {
+    grid-template-columns: 4fr 5fr 2fr;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -423,6 +453,10 @@ section.contact {
   padding: 0 25px 25px;
 }
 
+.map-col {
+  min-height: 200px;
+}
+
 .contact-info-col {
   background: $dark-gray;
   color: white;
@@ -442,11 +476,11 @@ section.contact {
   h4 {
     font-size: 23px;
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: $spacing;
     color: white;
   }
   .contact-item {
-    margin-bottom: 70px;
+    margin-bottom: $spacing;
   }
   .heading {
     display: flex;
