@@ -5,6 +5,7 @@ import "boxicons/css/boxicons.min.css";
 import imgPlaceholder from "../images/img300_200.jpg";
 
 import { initMap } from "./map";
+import { initMenu } from "./collapseMenu";
 
 let postsData = [];
 let lastScrollPosition = 0;
@@ -195,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMap();
   sal();
   initModal();
+  initMenu();
 
   document.addEventListener("scroll", (e) => {
     showNav(e);
